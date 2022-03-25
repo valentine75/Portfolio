@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+    background: #191A1D;
+}
+
+
+/* ELEMENTOS DE HEADER============================ */
+header{
+    width: 100%;
+    height: 72px;
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* LOGO PRINCIPAL */
+.logo span{
+    width: 30%;
+    margin-left: 20px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 3px 4px black;
+    
+}
+
+/* ELEMENTOS DE NAV */
+header input, header label{
+    display: none;
+}
+
+nav{
+    width: 60%;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+
+/* AFECTA A LOS ENLACES */
+nav a, #portafolio a, footer a{
+    font-size: 1.2em;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    font-weight: bold;
+}
+
+
+/* ELEMENTOS DE MAIN============================ */
+/* ELEMENTOS GENERALES */
+section{
+    width: 100%;
+    margin-top: 70px;
+    padding: 30px;
+}
+
+.container-principal{
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido{
+    width: 90%;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+h1{
+    padding: 5px;
+    font-size: 1.7em;
+    border-bottom: 4px solid #243949;
+    margin-bottom: 20px;
+}
+
+
+/* PRIMER SECTION PRESENTACION---------------------- */
+.lenguajes{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+   
+}
+
+.lenguajes img{
+    min-width: 30px;
+    margin-right: 10px;
+}
+
+
+/* SEGUNDO SECTION PROYECTOS---------------------- */
+.img-portafolio{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 1rem;
+}
+
+figure img{
+    width: 100%;
+/* le resta al el alto de la imagen al contenedor*/
+    height: calc(100% - 5rem);
+    border-radius: 10px;
+
+}
+
+figure figcaption{
+    width: 100%;
+    background:#243949;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center; 
+}
+
+#portafolio a{
+    padding: 10px;
+    font-size: 1em;
+}
+
+
+.code{
+    color: #243949;
+    transition: all 0.5s ease-in;
+}
+
+figure:hover .code{
+    color: orangered;
+}
+
+
+/* TERCERSECTION CONTACTO---------------------- */
+.form-contacto{
+    width: 80%;
+    padding: 5px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-contacto span{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+form{
+    width: 60%;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    padding: 12px 0;
+}
+
+form input, textarea, button{
+    font-size: 16px;
+    height: 43px;
+    border-radius: 5px;
+}
+
+textarea{
+    height: 85px;
+    resize: vertical;
+}
+
+button{
+    color: white;
+    background:#0581a3;
+    border-color: white;
+    width: 40%;
+    margin: 20px 30%;
+    transition: all 0.5s ease-in;font-weight: bold;
+}
+
+button:hover{
+    background-image: linear-gradient(to right, #022036 0%, #4c708f 100%);
+}
+
+
+/* ELEMENTOS DE FOOTER============================ */
+footer{
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    margin-top: 45px;
+}
+
+.logos-footer{
+    width: 40%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.logos-footer a{
+    padding: 10px;
+    font-size: 40px;
+}
+
+.logos-footer a:hover{
+    transform: scale(1.3,1.3);
+}
+
+.copy{
+    padding: 10px;
+}
+
+
+/* COMIENZAN MEDIA QUERIES=================================== */
+@media (max-width:1024px){
+
+/* ELEMENTOS DE MAIN============================ */
+    section{
+        padding: 30px 0;  
+    }
+
+    /* TERCERSECTION CONTACTO---------------------- */
+    .form-contacto{
+        width: 90%;
+    }
+
+    form{
+        width: 70%;
+    }
+
+}
+
+
+@media (max-width:920px){
+/* ELEMENTOS DE HEADER============================ */
+    header{
+        height: 55px;
+    }
+
+    h1{
+        font-size: 1.6em;
+    }
+
+    /* LOGO PRINCIPAL */
+    .logo span{
+        font-size: 1.8em;      
+    }
+    
+    /* AFECTA A LOS ENLACES */
+    nav a, #portafolio a, footer a{
+        font-size: 1em;
+        padding: 5px;
+    }
+
+    /* ELEMENTOS DE NAV */
+    #labelMovil .bx-menu{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 40px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }  
+    
+     nav#botoneraMovil ul{ 
+        display: block;
+        position: absolute;
+        top: 55px;
+        left: 0px; 
+        line-height: 30px;
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.4s ease-in;
+        background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    }  
+
+    /* INICIA LABEL#MOVIL E INPUT#BOTNMOVIL */
+    #labelMovil{
+        display: block;
+    } 
+
+    input#botonMovil:checked ~ nav#botoneraMovil ul{ 
+         height: 100px;
+         padding: 5px;
+    }
+}
+
+
+@media (max-width:720px){
+/* ELEMENTOS DE MAIN============================ */
+
+    /* TERCERSECTION CONTACTO---------------------- */
+    .form-contacto{
+        width: 90%;
+    }
+
+    form{
+        width: 90%;
+    }
+
+    form input, textarea, button, label{
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width:480px){
+/* ELEMENTOS DE HEADER============================ */
+    /* LOGO PRINCIPAL */
+    .logo span{
+        width: 60%;
+        font-size: 1.8em;      
+    }
+
+    nav{
+        width: 40%;
+    }
+    
+    h1{
+        font-size: 1.5em;
+    }
+
+/* ELEMENTOS DE MAIN============================ */
+/* ELEMENTOS GENERALES */
+    section{
+        margin-top: 30px;
+    }
+
+    .contenido{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+/* PRIMER SECTION PRESENTACION---------------------- */
+    .lenguajes{
+        width: 100%;
+        padding: 5px;
+    }
+
+/* ELEMENTOS DE MAIN============================ */
+    /* TERCERSECTION CONTACTO---------------------- */
+    form{
+        width: 100%;
+    }
+
+/* ELEMENTOS DE FOOTER============================ */
+    .logos-footer{
+        width: 80%;
+        padding: 5px;
+    }
+
+}
+

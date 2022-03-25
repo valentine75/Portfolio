@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    
+
+    <title>Portafolio Personal</title>
+</head>
+<body>
+
+    
+    
+    <!-- ELEMENTOS DE HEADER -->
+    <header>
+
+        <div class="logo">
+            <span> Rufina Cruz </span>
+        </div>
+        
+        <!-- ELEMENTOS DE NAV -->
+        <input type="checkbox" id="botonMovil">
+
+        <label for="botonMovil" id="labelMovil"> <i class='bx bx-menu'></i></label>
+
+        <nav id="botoneraMovil">
+            <ul>
+                <li><a href="#presentacion">SOBRE MÍ</a></li>
+                <li><a href="#portafolio">PORTAFOLIO</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ELEMENTOS DE MAIN -->
+    <main>
+
+        <!-- PRIMER SECTION PRESENTACION---------------------- -->
+        <section id="presentacion">
+            <div class="container-principal">
+                <div class="contenido">
+                    <h1>SOBRE MÍ</h1>
+                    <p>Soy Desarrolladora Web Full-Stack apasionada por la tecnología.</p>
+                    <p>Soy mayormente autodidacta y me gustan los proyectos que me incentiven a superarme y de los cuales pueda aprender algo nuevo.</p>
+                </div>
+
+                <div class="lenguajes">
+                    <img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/ alt="html5"><a href="https://icons8.com/icon/20909/html-5"></a>
+
+                    <img src="https://img.icons8.com/color/48/000000/css3.png"/><a href="https://icons8.com/icon/21278/css3"></a>
+
+                    <img src="https://img.icons8.com/color/48/000000/bootstrap.png"/><a href="https://icons8.com/icon/84710/bootstrap"></a>
+
+                    <img src="https://img.icons8.com/color/48/000000/javascript.png"/><a href="https://icons8.com/icon/108784/javascript"></a>
+
+                    <img src="https://img.icons8.com/color/48/000000/mysql-logo.png"/><a href="https://icons8.com/icon/UFXRpPFebwa2/mysql-logo"></a>
+
+                    <img src="https://img.icons8.com/officel/80/000000/php-logo.png"/><a href="https://icons8.com/icon/fAMVO_fuoOuC/php-logo"></a></a>
+
+                    <img src="https://img.icons8.com/color/48/000000/git.png"/><a href="https://icons8.com/icon/20906/git"></a>
+                
+            </div>
+            </div>
+        </section>
+
+        <!-- SEGUNDO SECTION PROYECTOS---------------------- -->
+        <section id="portafolio">
+            <div class="container-principal">
+                <div class="contenido">
+                    <h1>PORTAFOLIO</h1>
+                </div>
+
+
+                <div class="contenido">
+                    <div class="img-portafolio">
+                        <!-- chdalliera@yahoo.com.ar profe de mate  ++  -->
+                        <figure>
+                            <img src="imagenes/viajes.JPG" alt="biografia">
+                            <figcaption>
+                                <span class="code">&lt;</span> 
+                                    <a href="https://pagina-turistica.netlify.app/" target="blank">Página turistica</a> 
+                                <span class="code">&#47;&gt;</span>
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="imagenes/formulario.JPG" alt="formulario">
+                            <figcaption>
+                                <span class="code">&lt;</span> 
+                                <a href="https://formulario-encuestas.netlify.app/" target="blank">Form. de encuestas</a> 
+                                <span class="code">&#47;&gt;</span>
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="imagenes/documentacion.JPG" alt="documentacion">
+                            <figcaption>
+                                <span class="code">&lt;</span> 
+                                <a href="https://pagina-documentacion.netlify.app/" target="blank">Documentación</a>
+                                <span class="code">&#47;&gt;</span>
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="imagenes/jugueteria.JPG" alt="jugueteria">
+                            <figcaption>
+                                <span class="code">&lt;</span> 
+                                <a href="https://jugueteria-nekomoon.netlify.app/" target="blank">Página de Jugueteria</a>
+                                <span class="code">&#47;&gt;</span>
+                            </figcaption>
+                        </figure>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- TERCER SECTION CONTACTO---------------------- -->
+        <section id="contacto">
+            <div class="container-principal">
+
+                <div class="contenido">
+                    <h1>CONTACTO</h1>     
+                </div>
+
+                <div class="contenido form-contacto">
+                    <span>¿Tienes alguna pregunta o quieres que trabajemos juntos?</span>
+
+                    <form action="">
+                        <!--CAMPO NOMBRE -->
+					    <label for="nombre"> Nombre </label>
+					    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+
+					    <!--CAMPO CORREO -->
+					    <label for="correo"> Correo electrónico</label>
+					    <input type="email" name="correo" id="correo" placeholder="Ingrese su correo electronico" required>
+
+					    <!--CAMPO TEXTAREA -->
+					    <label for="comentarios">Mensaje</label>
+					    <textarea name="comentarios" id="comentarios"></textarea>
+
+					    <!--CAMPO BUTTON -->
+					    <button id="boton-envio">Enviar</button>
+                    </form>
+                </div>    
+            </div>
+        </section>
+    </main>
+
+    <!-- ELEMENTOS DE FOOTER-->
+    <footer>
+        <div class="container-principal">
+        <div class="logos-footer">
+            <a href="#"> <i class='bx bxl-facebook-square'></i> </a>
+            <a href="#"> <i class='bx bxl-twitter' ></i> </a>
+            <a href="https://github.com/valentine75?tab=repositories" target="blank"> <i class='bx bxl-github' ></i> </a>
+            <a href="https://www.linkedin.com/in/rufina-cruz-2152321b0/" target="blank"> <i class='bx bxl-linkedin-square'></i> </a>
+        </div>
+
+        <div class="copy">
+            <p>&copy; Creado por Rufina Cruz</p>
+        </div>
+
+        </div>
+     
+    </footer>
+    
+</body>
+</html>
